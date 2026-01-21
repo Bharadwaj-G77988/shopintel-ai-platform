@@ -1,6 +1,6 @@
 ﻿from fastapi import FastAPI
-from app.database import Base, engine
-from app.routes import auth
+from backend.app.database import Base, engine
+from backend.app.routes import auth
 
 Base.metadata.create_all(bind=engine)
 

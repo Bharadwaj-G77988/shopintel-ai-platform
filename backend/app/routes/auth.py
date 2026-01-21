@@ -1,19 +1,9 @@
 ﻿from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy
-uvicorn backend.app.main:app --reload
-# Ensure we are in repo root
-cd C:\Users\Dell\SHOPINTEL
-
-# -------------------------------
-# FIX AUTH ROUTES (COMPLETE FILE)
-# -------------------------------
-@"
-from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.database import get_db
-from app.models.user import User
-from app.schemas.user import UserCreate
-from app.core.security import hash_password, verify_password, create_access_token
+from backend.app.database import get_db
+from backend.app.models.user import User
+from backend.app.schemas.user import UserCreate
+from backend.app.core.security import hash_password, verify_password, create_access_token
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
 
